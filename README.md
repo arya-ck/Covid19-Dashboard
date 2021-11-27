@@ -1,5 +1,6 @@
 # CovidDashboard
 
+This is an application that fetches the live data from the REST endpoints exposed by authentic sources, and shows a summarized dashboard for daily/historic data pertaining to COVID-19 pandemic in India.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
 ## Development server
