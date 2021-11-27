@@ -1,0 +1,18 @@
+<div class="landing-card-title">
+    <div>
+        <span class="title">India</span>
+        <span style="font-size: 0.8rem; text-align: center;">Updated on {{updatedOn}}</span>
+    </div>
+    <div>
+        <div class="dataset" *ngFor="let data of entireData" class={{data.label}}>
+            <div>{{data.label}}</div>
+            <div class="subtitle">{{data.value}}</div>
+        </div>
+    </div>
+</div>
+<div class="landing-card-container">
+    <div *ngFor="let card of cards" class="card {{card.label}}">
+        <div>{{card.label}} (Today)</div>
+        <div>{{card.value}}</div>
+    </div>
+</div>

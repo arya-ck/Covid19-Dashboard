@@ -1,0 +1,94 @@
+.landing-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card {
+    padding: 1rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    line-height: 2rem;
+    text-align: center;
+    min-width: 7rem;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px darkgray;
+}
+@media screen and (max-width: 767px) {
+    .landing-card-container {
+        display: block;
+    }
+    .card {
+        width: 90%;
+    }
+}
+.Active {
+    color: rgb(0, 123, 255);
+}
+.Recovered {
+    color: rgb(40, 167, 70);
+}
+.Dead {
+    color: rgb(108, 117, 125);
+}
+.Confirmed {
+    color: rgba(252, 7, 56, 0.945);
+}
+
+.card.Active {
+    color: rgb(0, 123, 255);
+    background-color: rgba(0, 123, 255, 0.225);
+}
+.card.Recovered {
+    color: rgb(40, 167, 70);
+    background-color: rgba(40, 167, 69, 0.225);
+}
+.card.Dead {
+    color: rgb(108, 117, 125);
+    background-color: rgba(108, 117, 125, 0.225);
+}
+.card.Confirmed {
+    color: rgba(252, 7, 56, 0.945);
+    background-color: rgba(255, 7, 58, 0.225)
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
+}
+.card.Active:hover {
+    background-color: rgba(0, 123, 255, 0.425);
+}
+.card.Recovered:hover {
+    background-color: rgba(40, 167, 69, 0.425);
+}
+.card.Dead:hover {
+    background-color: rgba(108, 117, 125, 0.425);
+}
+.card.Confirmed:hover {
+    background-color: rgba(255, 7, 58, 0.425)
+}
+.landing-card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.landing-card-title > div{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title {
+    font-size: 6rem;
+}
+.dataset {
+    margin-bottom: 0.4rem;
+}
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: .1rem;
+}

@@ -1,0 +1,33 @@
+<div class="dashboard">
+    <div class="tabledata">
+        <table class="table">
+            <thead>
+                <td>State</td>
+                <td>Confirmed</td>
+                <td>Active</td>
+                <td>Recovered</td>
+                <td>Deaths</td>
+            </thead>
+            <tbody>
+                <tr *ngFor="let state of stateData" (click)="setSelectedState(state)" [class.selected]="selectedState == state">
+                    <td>{{state.name}}</td>
+                    <td>{{state.confirmed}}</td>
+                    <td>{{state.active}}</td>
+                    <td>{{state.recovered}}</td>
+                    <td>{{state.dead}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <div class="chart">
+        <canvas baseChart width="100%"
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [colors]="pieChartColors"
+          [legend]="pieChartLegend">
+        </canvas>
+    </div> -->
+</div>

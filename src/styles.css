@@ -1,0 +1,39 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tabledata, .chart {
+    width: 50%;
+}
+@media screen and (max-width: 767px) {
+    .dashboard {
+        display: block;
+    }
+    .tabledata, .chart {
+        display: block;
+        width: 90%;
+        padding: 0 5%;
+    }
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table thead {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+.table td {
+    padding: 0.5rem;
+}
+.table tr:nth-child(2n) {
+    background-color: lightskyblue;
+}
+.table tr:hover, .table tr.selected {
+    background-color: cornflowerblue;
+    border: 1px solid mediumslateblue;
+}
+app-root {
+    margin-bottom: 2rem;
+}
