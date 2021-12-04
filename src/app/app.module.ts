@@ -10,6 +10,7 @@ import { ZonesComponent } from './zones/zones.component';
 import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,10 @@
-<p>history works!</p>
+<section class="flex-center">
+    <canvas baseChart width="400" height="150"
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [legend]="lineChartLegend"
+    [chartType]="lineChartType"
+    [plugins]="lineChartPlugins">
+  </canvas>
+</section>

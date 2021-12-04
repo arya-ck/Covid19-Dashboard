@@ -37,3 +37,14 @@
 app-root {
     margin-bottom: 2rem;
 }
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.label {
+    margin: .75rem 2rem .75rem 0;
+}
+.state-input {
+    width: 15rem;
+}

@@ -221,23 +221,26 @@
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: lightgray;
+    background-color: #1976d2;
+    color: white;
     justify-content: center;
   }
 
   footer a {
+    color: white;
     display: flex;
     align-items: center;
   }
 
   .github-star-badge {
-    color: #24292e;
+    color: white;
     display: flex;
     align-items: center;
     font-size: 12px;
     padding: 3px 10px;
     margin-left: 4px;
     font-weight: 600;
+    fill: white;
   }
 
   .github-star-badge:hover {

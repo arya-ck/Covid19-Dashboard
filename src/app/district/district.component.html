@@ -1,1 +1,33 @@
-<p>district works!</p>
+<section>
+  <div class="state-selection flex-center">
+    <label class="label">Choose State</label>    
+    <input list="states" class="state-input" placeholder="Select a State to view the Dashboard" [(ngModel)]="selectedState" (change)="initializeTable()">
+    <datalist id="states" ngM>
+      <option *ngFor="let name of stateNames" value="{{name.statecode}}">{{name.state}}</option>
+    </datalist>
+  </div>
+  <div class="flex-center">
+    <div class="dashboard">
+      <div *ngIf="selectedState" class="tabledata">
+        <table class="table">
+          <thead>
+            <td>State</td>
+            <td>Confirmed</td>
+            <td>Active</td>
+            <td>Recovered</td>
+            <td>Deaths</td>
+          </thead>
+          <tbody>
+            <tr *ngFor="let district of districtData">
+              <td>{{district.name}}</td>
+              <td>{{district.confirmed}}</td>
+              <td>{{district.active}}</td>
+              <td>{{district.recovered}}</td>
+              <td>{{district.dead}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

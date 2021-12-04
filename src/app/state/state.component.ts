@@ -44,7 +44,7 @@ export class StateComponent implements OnInit {
 
   ngOnInit(): void {
     this.http.get(this.stateEndPoint).subscribe((stateData: any) => {
-      console.log(stateData);
+      // console.log(stateData);
 
       this.initializePieChart(stateData);
 
@@ -62,7 +62,7 @@ export class StateComponent implements OnInit {
     if(stateData.states){
       Object.keys(stateData.states).forEach((stateCode) => {
         let {name, active, confirmed, dead, recovered} = stateData.states[stateCode];
-        this.stateData.push({name, active, confirmed, dead,recovered});
+        this.stateData.push({name, active, confirmed, dead, recovered});
       });
     }
   }
